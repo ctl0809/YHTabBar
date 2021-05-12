@@ -1,0 +1,31 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - lottie-ios (3.1.9)
+  - YHTabBar (0.1.0):
+    - lottie-ios
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - YHTabBar (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - lottie-ios
+
+EXTERNAL SOURCES:
+  YHTabBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  YHTabBar: 162ceac87bfc2d254b68ea364fe4f84788e2b597
+
+PODFILE CHECKSUM: 25f7f631473f0a67f0ac1e6ae15b89f8527ecabf
+
+COCOAPODS: 1.10.1

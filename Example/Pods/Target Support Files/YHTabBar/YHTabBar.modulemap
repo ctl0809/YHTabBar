@@ -1,0 +1,6 @@
+framework module YHTabBar {
+  umbrella header "YHTabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

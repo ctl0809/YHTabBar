@@ -1,0 +1,6 @@
+framework module Pods_YHTabBar_Example {
+  umbrella header "Pods-YHTabBar_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
