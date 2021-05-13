@@ -9,7 +9,7 @@
 import UIKit
 import Lottie
 
-public class YHTabBarItemContainerView: UIView {
+open class YHTabBarItemContainerView: UIView {
 
     /// 是否被选中
     var isSelected: Bool = false

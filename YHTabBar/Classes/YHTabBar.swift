@@ -14,7 +14,7 @@ public protocol YHTabBarDelegate {
     func tabBar(tabBar: YHTabBar, didSelect item: UITabBarItem)
 }
 
-public class YHTabBar: UITabBar {
+open class YHTabBar: UITabBar {
 
     public var tabBardelegate: YHTabBarDelegate?
     public var didSelectIndexClosure: ((Int)->())?
