@@ -9,7 +9,7 @@
 import UIKit
 import Lottie
 
-class YHTabBarItemContainerView: UIView {
+public class YHTabBarItemContainerView: UIView {
 
     /// 是否被选中
     var isSelected: Bool = false
@@ -98,13 +98,13 @@ class YHTabBarItemContainerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         upadteLayout()
     }
     
-    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    public override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         var result = false
         for view in subviews {
             if view.frame.contains(point) {

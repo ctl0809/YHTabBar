@@ -8,23 +8,23 @@
 
 import UIKit
 
-protocol YHTabBarDelegate {
+public protocol YHTabBarDelegate {
     func tabBar(tabBar: YHTabBar, shouldSelect item: UITabBarItem) -> Bool
     func tabBar(tabBar: YHTabBar, canSelect item: UITabBarItem) -> Bool
     func tabBar(tabBar: YHTabBar, didSelect item: UITabBarItem)
 }
 
-class YHTabBar: UITabBar {
+public class YHTabBar: UITabBar {
 
-    var tabBardelegate: YHTabBarDelegate?
-    var didSelectIndexClosure: ((Int)->())?
+    public var tabBardelegate: YHTabBarDelegate?
+    public var didSelectIndexClosure: ((Int)->())?
     
     var beforSelectIndex: Int = -1
     let baseTag: Int = 1000
     var wrapViews: [YHTabBarItemWrapView] = []
     
     /// 偏移量，影响所有item。当`layoutType`为`fillUp`时有效
-    var inset: UIEdgeInsets = .zero {
+    public var inset: UIEdgeInsets = .zero {
         didSet {
             self.setNeedsLayout()
             self.layoutIfNeeded()
@@ -32,32 +32,32 @@ class YHTabBar: UITabBar {
     }
     
     /// 设置items，由系统调用，开发者最好不要手动设置该属性
-    override var items: [UITabBarItem]? {
+    public override var items: [UITabBarItem]? {
         didSet {
             updateDisplay()
         }
     }
     
-    override func setItems(_ items: [UITabBarItem]?, animated: Bool) {
+    public override func setItems(_ items: [UITabBarItem]?, animated: Bool) {
         super.setItems(items, animated: animated)
         updateDisplay()
     }
     
-    override func beginCustomizingItems(_ items: [UITabBarItem]) {
+    public override func beginCustomizingItems(_ items: [UITabBarItem]) {
         super.beginCustomizingItems(items)
     }
     
-    override func endCustomizing(animated: Bool) -> Bool {
+    public override func endCustomizing(animated: Bool) -> Bool {
         return super.endCustomizing(animated: animated)
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         //
         self.updateLayout()
     }
     
-    override func value(forUndefinedKey key: String) -> Any? {
+    public override func value(forUndefinedKey key: String) -> Any? {
         return nil
     }
     
