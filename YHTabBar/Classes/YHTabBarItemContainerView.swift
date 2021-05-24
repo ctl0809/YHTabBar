@@ -94,7 +94,7 @@ open class YHTabBarItemContainerView: UIView {
         
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
