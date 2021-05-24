@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'YHTabBar/Classes/**/*'
+#  s.source_files = 'YHTabBar/Classes/**/*'
   
   # s.resource_bundles = {
   #   'YHTabBar' => ['YHTabBar/Assets/*.png']
